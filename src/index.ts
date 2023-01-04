@@ -1,6 +1,11 @@
-const hello = () => console.log("hi1");
+import { init, exit } from "myPackage";
+// myPackage.d.ts에 선언으로 init, exit에 대한 존재를 알수 있다.
+// myPackage.d.ts이 없으면 오류 생김(이런 에러 => Module '"myPackage"' has no exported member 'exit'.ts(2305))
 
-// tsconfig.json > "lib": ["ES6", "dom"] 에 의해서
-//  - getItem을 추천해준다.
-//  - localStorage F12하면 lib.dom.d.ts 파일에 접근할 수 있다.
-localStorage.getItem();
+init({
+  url: "true",
+});
+
+exit(1);
+
+localStorage.clear();

@@ -1,13 +1,16 @@
 {
     "include": ["src/**/*"],
+    // 아래 property에 마우스를 올려 놓으면 참고할 주소가 보인다.
     "compilerOptions": {
         "outDir": "build",
+        "esModuleInterop": true,
         "target": "ES6",
         "module": "commonjs",
         "lib": ["ES6", "dom"],
         "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
-        "sourceMap": true
+        "sourceMap": true,
+        "strict": true
     },
 }

@@ -20,3 +20,6 @@ touch tsconfig.json
 7. setting package.json
 
 - add scripts: "build": "tsc"
+
+* lib 설정
+  - https://www.typescriptlang.org/tsconfig#lib
