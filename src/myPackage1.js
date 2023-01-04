@@ -1,5 +1,8 @@
 // @ts-check
+// jsdoc.app 참고
+
 /**
+ *
  * Initializes the project
  * @param {object} config
  * @param {boolean} config.debug
