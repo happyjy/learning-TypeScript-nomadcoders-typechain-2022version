@@ -4,6 +4,7 @@
         "outDir": "build",
         "target": "ES6",
         "module": "commonjs",
+        "lib": ["ES6", "dom"],
         "noImplicitAny": true,
         "removeComments": true,
         "preserveConstEnums": true,
