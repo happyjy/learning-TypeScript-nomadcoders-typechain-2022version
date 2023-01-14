@@ -53,3 +53,12 @@ touch tsconfig.json
   "dev": "nodemon --exec ts-node src/index.ts"
   }
 ```
+
+10. TypeScript type 정의를 위한 리포지토리
+    https://github.com/DefinitelyTyped/DefinitelyTyped
+
+11. @types/node 설치
+
+- 아래 폴어데 있는 d.ts를 모두 설치해서 type을 알 수 있게 설정
+  https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node
+- npm i -D @types/node
