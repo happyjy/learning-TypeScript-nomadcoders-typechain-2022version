@@ -23,3 +23,33 @@ touch tsconfig.json
 
 * lib 설정
   - https://www.typescriptlang.org/tsconfig#lib
+
+8. ts build & execute js file
+
+- package.json 파일 참고
+- npm run build && npm run start 로 실행
+
+```
+// package.json
+ "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js",
+  },
+```
+
+9. ts 파일 저장시 다음 두 동작 동시에 해주는 module(compile & execute js)
+
+- npm i -D ts-node
+  - ts 컴파일할 필요없이 ts 실행
+  - 개발 환경에서만 사용(production 프로젝트 에서 사용 하지 않는다.)
+- npm i nodemon
+  - 자동으로 커맨드를 재실행 해준다.
+- package.json에 nodemon 관련 명령어 추가
+- npm run dev로 실행
+
+```
+// package.json
+  'script' : {
+  "dev": "nodemon --exec ts-node src/index.ts"
+  }
+```
