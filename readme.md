@@ -37,22 +37,25 @@ touch tsconfig.json
   },
 ```
 
-9. ts 파일 저장시 다음 두 동작 동시에 해주는 module(compile & execute js)
+9. ts 파일 저장시 TS파일 컴파일과 컴파일된 파일을 실행시켜주는 module
 
-- npm i -D ts-node
+- TS파일 컴파일
+  - npm i -D ts-node
   - ts 컴파일할 필요없이 ts 실행
   - 개발 환경에서만 사용(production 프로젝트 에서 사용 하지 않는다.)
-- npm i nodemon
+- 컴파일된 파일
+  - npm i nodemon
   - 자동으로 커맨드를 재실행 해준다.
 - package.json에 nodemon 관련 명령어 추가
-- npm run dev로 실행
 
 ```
 // package.json
   'script' : {
-  "dev": "nodemon --exec ts-node src/index.ts"
+    "dev": "nodemon --exec ts-node src/index.ts"
   }
 ```
+
+- npm run dev로 실행
 
 10. TypeScript type 정의를 위한 리포지토리
     https://github.com/DefinitelyTyped/DefinitelyTyped
